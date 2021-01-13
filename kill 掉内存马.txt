@@ -1,0 +1,9 @@
+#pfp-fpm 条件下 
+kill `ps -ef | grep php-fpm | grep -v grep | grep 'www' | awk '{print $1}'`
+
+# apache
+#httpd
+kill `ps -ef | grep httpd | grep -v grep | grep 'www' | awk '{print $1}'`
+
+#apache2
+kill `ps -ef | grep apache | grep -v grep | grep 'www'| awk '{print $2}'`
